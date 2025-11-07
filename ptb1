@@ -1,0 +1,12 @@
+read -p 'nhap he so a: ' a
+read -p 'nhap he so b: ' b
+
+if [ $a -eq 0 ]
+then
+    echo 'phuong trinh vo nghiem'
+elif [ $b -eq 0 ] 
+then
+    echo 'phuong trinh vo so nghiem'
+else
+    echo "x = $(echo "scale=2;-$b/$a" | bc)"
+fi
